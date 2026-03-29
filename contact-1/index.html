@@ -64,7 +64,7 @@
       document.documentElement.className =
         document.documentElement.className + " yes-js js_active js";
     </script>
-    <title>Our Top Performers &#8211; OCC</title>
+    <title>Contact Us &#8211; OCC</title>
     <link rel="icon" type="image/png" href="/wp-content/themes/eikra/assets/img/favicon.png">
     <meta name="robots" content="max-image-preview:large" />
     <noscript
@@ -2707,7 +2707,7 @@
                                   
                                         <div class="col-lg-6 col-md-6 col-sm-6">
                                           <div class="form-group">
-                                            <input class="form-control" type="text" id="subject" placeholder="Subject*" required>
+                                            <input class="form-control" type="text" id="standard" placeholder="Standard/Course*" required>
                                           </div>
                                         </div>
                                   
@@ -2739,11 +2739,11 @@
                                   
                                     const name = document.getElementById("name").value.trim();
                                     const email = document.getElementById("email").value.trim();
-                                    const subject = document.getElementById("subject").value.trim();
+                                    const standard = document.getElementById("standard").value.trim();
                                     const phone = document.getElementById("phone").value.trim();
                                     const message = document.getElementById("message").value.trim();
                                   
-                                    if (!name || !email || !subject || !message) {
+                                    if (!name || !email || !standard || !message) {
                                       alert("Please fill all required fields!");
                                       return;
                                     }
@@ -2751,7 +2751,7 @@
                                     const text = `Hello,
                                   Name: ${name}
                                   Email: ${email}
-                                  Subject: ${subject}
+                                  Standard/Course: ${standard}
                                   Phone: ${phone}
                                   Message: ${message}`;
                                   
